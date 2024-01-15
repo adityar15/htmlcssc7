@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+    <form class="flex flex-col gap-2 max-w-md mx-auto p-5" method="POST" action="https://example.com/contact-details">
+
+        <div class="flex flex-col gap-2">
+            <label for="">Name</label>
+            <input type="text" name="full_name" class="border border-gray-200 rounded p-3" />
+        </div>
+
+        <div class="flex flex-col gap-2">
+            <label for="">Email</label>
+            <input type="email" name="email" class="border border-gray-200 rounded p-3" />
+        </div>
+
+        <div class="flex flex-col gap-2 md:inline-flex hidden">
+            <label for="">Message</label>
+            <textarea rows="10" cols="5" name="message" class="border border-gray-200 rounded p-3"></textarea>
+        </div>
+
+        <div>
+            <button class="bg-green-500 px-5 py-2 text-white rounded-md hover:bg-green-700 transition-all duration-200 ease-in-out">
+                Send
+            </button>
+        </div>
+
+    </form>
+
+    <section>
+        <h1 class="text-blue-500 font-bold">
+            This is my page
+        </h1>
+        <h2>
+            This is subheading
+        </h2> 
+    </section>
+   
+
+    <div>
+        <h1>
+            This is my page
+        </h1>
+        <h2 class="element-with-blue">
+            This is subheading
+        </h2>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, blanditiis, ipsa est optio praesentium sint dolorum voluptatibus, alias culpa iusto consectetur. Ipsa quibusdam doloribus laboriosam. Error illum repellat sed voluptatum?
+        </p>
+    </div>
+
+    <div>
+        <a class="element-with-blue" href="https://google.com">
+            Visit Google
+        </a>
+        <br />
+    
+        <a class="element-with-blue" href="https://google.com" target="_blank" rel="noopener noreferrer">
+            Google in new tab
+        </a>
+    
+        <br />
+    
+        <a class="element-with-blue" href="mailto:aditya@example.com">
+            Send email to aditya@example.com
+        </a>
+    </div>
+
+    <ul>
+        <li>
+            Item 1
+        </li>
+        <li>
+            Item 2
+        </li>
+        <li>
+            Item 3
+        </li>
+    </ul>
+   
+
+   
+
+</body>
+</html>
