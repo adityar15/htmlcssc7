@@ -6,36 +6,47 @@
     <title>Document</title>
     <!-- <link rel="stylesheet" href="style.css"> -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+ 
 </head>
 <body>
 
-    <form class="flex flex-col gap-2 max-w-md mx-auto p-5" method="POST" action="https://example.com/contact-details">
+    <main class="max-w-2xl mx-auto p-2">
 
-        <div class="flex flex-col gap-2">
-            <label for="">Name</label>
-            <input type="text" name="full_name" class="border border-gray-200 rounded p-3" />
+        <!-- convert this to html form -->
+        <!-- use JS to capture data from the form -->
+        <div class="flex items-center gap-1">
+            <input type="search" placeholder="Enter your Github username" name="username" 
+            id="username-input" class="border border-gray-300 rounded p-2 flex-grow" />
+            <button id="my-button" class="bg-blue-500 text-white px-5 py-2 rounded">Search</button>
         </div>
 
-        <div class="flex flex-col gap-2">
-            <label for="">Email</label>
-            <input type="email" name="email" class="border border-gray-200 rounded p-3" />
+
+        <div class="details-container mt-10">
+            <!-- Details of the user -->
+            <div class="flex items-center gap-1">
+                <img src="" alt="User Image" id="user-image" class="w-10 h-10 rounded-full shadow" />
+                <a id="username-text" target="_blank" href="" class="text-gray-800 text-lg font-semibold"></a>
+            </div>
+
+
+            <ul class="mt-4 flex flex-col gap-1">
+                <li id="followers-count" class="text-gray-500 font-semibold">
+                    
+                </li>
+                <li id="public-repos" class="text-gray-500 font-semibold">
+                   
+                </li>
+            </ul>
+            <!-- message to show errors -->
         </div>
 
-        <div class="flex flex-col gap-2 md:inline-flex hidden">
-            <label for="">Message</label>
-            <textarea rows="10" cols="5" name="message" class="border border-gray-200 rounded p-3"></textarea>
-        </div>
+    </main>
 
-        <div>
-            <button class="bg-green-500 px-5 py-2 text-white rounded-md hover:bg-green-700 transition-all duration-200 ease-in-out">
-                Send
-            </button>
-        </div>
-
-    </form>
-
+   
 
     <script src="./index.js"></script>
+   
    
 
 </body>
