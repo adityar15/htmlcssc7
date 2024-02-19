@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <main class="max-w-2xl mx-auto p-2">
+
+        <form id="search-form" class="flex items-center gap-1">
+            <input type="search" placeholder="Enter user id between 1-10" name="userid" id="userid-input"
+                class="border border-gray-300 rounded p-2 flex-grow" />
+            <button type="submit" id="my-button" class="bg-blue-500 text-white px-5 py-2 rounded">Search</button>
+        </form>
+
+
+        <ul class="mt-4 flex flex-col gap-1">
+            <li id="name-text" class="text-gray-500 font-semibold">
+
+            </li>
+            <li id="username-text" class="text-gray-500 font-semibold">
+
+            </li>
+            <li id="email-text" class="text-gray-500 font-semibold">
+
+            </li>
+        </ul>
+
+        <script src="./user.js"></script>
+    </main>
+</body>
+
+</html>
